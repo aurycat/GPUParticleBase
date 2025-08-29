@@ -10,9 +10,18 @@ need to write shader code to define how the particles behave, but this package
 provides .cginc files to do all the "boring" parts of setting up a GPU particle
 system for you, as well as provides usage examples.
 
-The following sections describe the provided examples and cgincs in increasing
-order of complexity. You should open the ExampleScene to see each example and
-follow along to the descriptions below.
+## Installing
+
+Visit the [releases page](https://github.com/aurycat/GPUParticleBase/releases) for a unitypackage file. Alternatively, [download this repo](https://github.com/aurycat/GPUParticleBase/archive/refs/heads/main.zip) and manually copy it into your Assets folder.
+
+
+## Usage
+
+There is an example scene provided which has three particle systems prepared.
+
+The following sections describe the provided examples and cgincs in
+somewhat-increasing order of complexity. You should open the example scene
+to view each example and follow along to the descriptions below.
 
 
 ## ExampleCuboid
