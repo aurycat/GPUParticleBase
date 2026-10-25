@@ -21,7 +21,7 @@ SubShader
     Pass
     {
         CGPROGRAM
-        #include "../../Shaders/ParticleCRTRendererBase.cginc"
+        #include_with_pragmas "../../Shaders/ParticleCRTRendererBase.cginc"
 
         uniform float _ParticleSize;
         uniform float _SizeRandomness;

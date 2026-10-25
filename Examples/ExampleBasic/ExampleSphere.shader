@@ -30,7 +30,7 @@ SubShader
     Pass
     {
         CGPROGRAM
-        #include "../../Shaders/ParticleRendererBase.cginc"
+        #include_with_pragmas "../../Shaders/ParticleRendererBase.cginc"
         #define TAU 6.283185307179586476925286766559
 
         uniform float _Radius;

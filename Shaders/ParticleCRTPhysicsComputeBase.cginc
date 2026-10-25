@@ -53,7 +53,7 @@
 // Created by aurycat. MIT License.
 
 
-#include "ParticleCRTComputeBase.cginc"
+#include_with_pragmas "ParticleCRTComputeBase.cginc"
 
 uniform float _TimeElapsed;
 uniform float _Reset;

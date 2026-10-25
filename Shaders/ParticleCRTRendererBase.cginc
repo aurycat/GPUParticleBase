@@ -26,7 +26,7 @@
 
 
 #define CUSTOM_FACTOR
-#include "ParticleRendererBase.cginc"
+#include_with_pragmas "ParticleRendererBase.cginc"
 
 Texture2D<float4> _CRT;
 float4 _CRT_TexelSize;

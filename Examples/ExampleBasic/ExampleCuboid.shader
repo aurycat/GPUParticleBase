@@ -28,7 +28,7 @@ SubShader
     Pass
     {
         CGPROGRAM
-        #include "../../Shaders/ParticleRendererBase.cginc"
+        #include_with_pragmas "../../Shaders/ParticleRendererBase.cginc"
 
         uniform float3 _Range;
         uniform float3 _Offset;

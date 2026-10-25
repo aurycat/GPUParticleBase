@@ -25,7 +25,7 @@ SubShader
     {
         CGPROGRAM
         #define CRT_PERIOD 0.01111 // Should match the Realtime Period value in the CRT. 0.01111 is 1/90 aka 90 FPS
-        #include "../../Shaders/ParticleCRTPhysicsComputeBase.cginc"
+        #include_with_pragmas "../../Shaders/ParticleCRTPhysicsComputeBase.cginc"
 
         uniform float4 _ForcePoint;
         uniform float _ForceStrength;

@@ -33,7 +33,7 @@ ExampleCuboid material on that renderer.
 Take a look at the ExampleCuboid.shader file to see the logic behind it. All
 of the boilerplate code is hidden in
 ```
-    #include "../../Shaders/ParticleRendererBase.cginc"
+    #include_with_pragmas "../../Shaders/ParticleRendererBase.cginc"
 ```
 while the logic to make the cube a cube is in the `pc_particle` function.
 `pc_particle` is called by the boilerplate code in `ParticleRendererBase.cginc`
@@ -92,7 +92,7 @@ There are a few parts to a CRT-based particle system:
     logic looks very similar to that of ExampleCuboid, except that it's using
     the CRT Renderer base include:
     ```
-        #include "../../Shaders/ParticleCRTRendererBase.cginc"
+        #include_with_pragmas "../../Shaders/ParticleCRTRendererBase.cginc"
     ```
     and now the handler function is pc_crt_particle. `pc_crt_particle` is like
     `pc_particle`, except it accepts extra state info from the CRT about the
@@ -129,7 +129,7 @@ There are a few parts to a CRT-based particle system:
     Here's where the actual logic of the particle system happens. Looking at
     `ExampleCRTPhysicsCompute.shader`, you'll see that now
     ```
-        #include "../../Shaders/ParticleCRTPhysicsComputeBase.cginc"
+        #include_with_pragmas "../../Shaders/ParticleCRTPhysicsComputeBase.cginc"
     ```
     is used to provide boilerplate for a physics particle system. It will call
     two functions which you must define: `pc_crt_physics_reset`, which provides
